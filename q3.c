@@ -1,7 +1,7 @@
 #include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
-#define chunk 100
+#define chunk 25
 #define n 100
 
 void main(){
@@ -11,7 +11,7 @@ void main(){
     float a[n], b[n], sum = 0.0;
 
     for(ii = 0; ii < n; ii++){
-        a[ii] = ii * 1.5;
+        a[ii] = (ii + 1) * 1.0;
     }
 
     #pragma omp parallel shared(a, b, nThreads, sum) private(tID, ii)
