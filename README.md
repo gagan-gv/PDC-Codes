@@ -30,3 +30,5 @@ gcc -o <file_name> -fopenmp <file_name>.c
    - omp_unset_lock
 
 2. [Using OpenMP, Design, develop and run a multi-threaded program to perform dot product and explain it.](https://github.com/gagan-gv/PDC-Codes/blob/main/q2.c)
+
+3. [Using OpenMP, Design, develop and run a multi-threaded program to perform sum of N elements (N=100) using Loop work Sharing with different schedule clause.](https://github.com/gagan-gv/PDC-Codes/blob/main/q3.c)
