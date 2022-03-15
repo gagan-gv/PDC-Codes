@@ -14,7 +14,7 @@ void main(){
         a[ii] = ii * 1.5;
     }
 
-    #pragma omp parallel shared(a, b, nThreads) private(tID, ii)
+    #pragma omp parallel shared(a, b, nThreads, sum) private(tID, ii)
     {
         tID = omp_get_thread_num();
         if(tID == 0){
@@ -22,10 +22,13 @@ void main(){
             printf("Number of threads = %d\n", nThreads);
         }
 
-        #pragma omp for schedule(dynamic, chunk)
+        #pragma omp for reduction(+: sum) schedule(dynamic, chunk)
         for(ii = 0; ii < n; ii++){
-            b[ii] = a[ii] + sum;
-            sum += a[ii];
+            #pragma omp critical
+            {
+                b[ii] = a[ii] + sum;
+                sum += a[ii];
+            }
             printf("Thread = %d --> b[%d] = %.2f\n", tID, ii, b[ii]);
         }
     }
