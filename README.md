@@ -33,8 +33,8 @@ gcc -o <file_name> -fopenmp <file_name>.c
 
 3. [Using OpenMP, Design, develop and run a multi-threaded program to perform sum of N elements (N=100) using Loop work Sharing with different schedule clause.](https://github.com/gagan-gv/PDC-Codes/blob/main/q3.c)
 
-4. [Write a parallel loop that computes the maximum and minimum values in an array using openMP.](https://github.com/gagan-gv/PDC-Codes/blob/main/q5.c)
+4. [Write a parallel loop that computes the maximum and minimum values in an array using openMP.](https://github.com/gagan-gv/PDC-Codes/blob/main/q4.c)
 
-5. [Using MPI, Design, develop and run Broadcast communication (MPI_Bcast) using MPI_Send and MPI_Recv.](https://github.com/gagan-gv/PDC-Codes/blob/main/q6.c)
+5. [Using MPI, Design, develop and run Broadcast communication (MPI_Bcast) using MPI_Send and MPI_Recv.](https://github.com/gagan-gv/PDC-Codes/blob/main/q5.c)
 
-6. [Write an MPI program to compute the value of Euler's number or Napier's constant (e = 2.718281828459046). Use a suitable collective communication function in it.](https://github.com/gagan-gv/PDC-Codes/blob/main/q7.c)
+6. [Write an MPI program to compute the value of Euler's number or Napier's constant (e = 2.718281828459046). Use a suitable collective communication function in it.](https://github.com/gagan-gv/PDC-Codes/blob/main/q6.c)
